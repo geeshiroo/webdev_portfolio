@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/7c9de9dcea.js" crossorigin="anonymous"></script>
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="nav">
+            <nav>
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            </div>
+            
+            <div class="header-text">
+                <p>Hello, I am</p>
+                <h1><span>Geward John Tuico</span></h1>
+                <p>Frontend Web Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/profile2.jpg" alt="user" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        As a reserved and proactive ISTP individual with a passion for web development, I have committed myself to self-growth and making valuable contributions to organizations. I recently completed an intensive IT coding bootcamp and have obtained certifications in Frontend, Backend, and Full-Stack Web Development.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="showTab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="showTab('experience')">
+                            Experience
+                        </p>
+                        <p class="tab-links" onclick="showTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Web Development</span><br />HTML, CSS, Bootstrap 5, and Git</li>
+                            <li><span>Backend Web Development</span><br />JavaScript, MongoDB, Node.js, Express.js, Postman, and Heroku</li>
+                            <li>
+                                <span>Full-Stack Web Development</span><br />React.js
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Nov 2019 - June 2022</span><br />Branch Operations Assistant at China Banking Corporation</li>
+                            <li>
+                                <span>May - July 2019</span><br />Logistic Personnel at Northpoint Manpower Services
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>Aug - Sept 2022</span><br />Web Development at Zuitt Coding Bootcamp
+                            </li>
+                            <li><span>2015 - 2019</span><br />BS in Accounting Technology at University of Mindanao</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- PROJECTS SECTION -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="./images/proj-1.png" alt="project1">
+                    <div class="layer">
+                        <h2>Static Web Portfolio</h2>
+                        <p>
+                        A capstone project showcasing my skills in building responsive personal webpage using HTML , CSS, Bootstrap and a snippet of Javascript.
+                        </p>
+                        <a href="https://geeshiroo.github.io/my-portfolio/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./images/proj-2.jpg" alt="project2">
+                    <div class="layer">
+                        <h2>Backend E-commerce API</h2>
+                        <p>
+                        An e-commerce API for back-end server build using MongoDB, Express.js and Node.js hosted in Heroku. Each request uses HTTP methods (GET, POST, PUT and DELETE) in Postman.
+                        </p>
+                        <a href="https://agile-peak-04192.herokuapp.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./images/portfolio3.svg" alt="project3">
+                    <div class="layer">
+                        <h2>E-commerce Application</h2>
+                        <p>
+                        An e-commerce web application made with React.js and deployed in Vercel for the front-end. MongoDB, Express.js, Node.js and Rest API for the back-end hosted in Heroku.
+                        </p>
+                        <a href="https://ecommerce-app-ufvf.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> gewardjohntuico@gmail.com</p>
+                    <!-- <p><i class="fa-solid fa-square-phone"></i> 09308023242</p> -->
+                    <div class="social-icons">
+                        <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="#" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Enter Full Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Geward John Tuico | Web Developer's Portfolio | 2022</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
