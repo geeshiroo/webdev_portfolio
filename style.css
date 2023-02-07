@@ -237,7 +237,7 @@ nav ul li a:hover::after {
 
 .project img {
     width: 100%;
-    height: 100%;
+    height: 330px;
     object-fit: cover;
     border-radius: 20px;
     display: block;
@@ -401,13 +401,21 @@ nav .fa-solid {
 
 @media only screen and (max-width: 600px) {
 
+    #header {
+        /* background: url(./images/bg-small2.jpg); */
+        background: #000;
+    }
+
     .header-text {
-        margin-top: 100%;
-        font-size: 16px;
+        margin: 285px 45px;
     }
 
     .header-text h1 {
-        font-size: 30px;
+        font-size: 42px;
+    }
+
+    .header-text p {
+        font-size: 24px;
     }
 
     nav .fa-solid {
@@ -419,8 +427,8 @@ nav .fa-solid {
         background: #1a2b6b;
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
+        right: -100%;
+        width: 100%;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
@@ -430,6 +438,7 @@ nav .fa-solid {
     nav ul li {
         display: block;
         margin: 50px;
+        text-align: center;
     }
 
     nav ul .fa-solid {
@@ -443,7 +452,13 @@ nav .fa-solid {
         font-size: 40px;
     }
 
-    .about-col-1, about-col-2 {
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-col-1,
+    about-col-2 {
         flex-basis: 100%;
     }
 
@@ -453,6 +468,11 @@ nav .fa-solid {
 
     .about-col-2 {
         font-size: 14px;
+        text-align: center;
+    }
+
+    .about-col-2 p {
+        text-align: center;
     }
 
     .tab-links {
@@ -460,11 +480,44 @@ nav .fa-solid {
         margin-right: 20px;
     }
 
-    .contact-left, .contact-right {
+    .contact-left {
+        margin-left: 0;
+    }
+
+    .contact-left,
+    .contact-right {
         flex-basis: 100%;
     }
 
     .copyright {
         font-size: 14px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 860px) {
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .about-col-1 img {
+        width: 350px;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .about-col-2 p {
+        text-align: center;
+    }
+
+    .contact-left {
+        margin: 0 25px 0 0;
     }
 }
